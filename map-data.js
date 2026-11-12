@@ -177,7 +177,9 @@ window.TRIP_PLACES = [
     "time": "12:15~13:00 전후",
     "lat": 35.673,
     "lng": 139.7038,
-    "note": "매장 또는 주소의 대표 위치 · 층·입구는 현장 확인"
+    "note": "매장 또는 주소의 대표 위치 · 층·입구는 현장 확인",
+    "mapUrl": "https://maps.app.goo.gl/VnUzgmYiowKpeN4q6",
+    "id": "afuri-harajuku"
   },
   {
     "day": "d2",

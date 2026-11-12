@@ -28,6 +28,10 @@ for day,sec in re.findall(r'<section class="day" id="(d\d)">(.*?)</section>',s,r
 places[:0]=[dict(day='base',name='Hotel Oriental Express Ginza West',address='東京都港区新橋4-10-2',time='숙소',lat=35.664818,lng=139.756195,note='기존 여행 지도 주소 좌표'),dict(day='base',name='나리타국제공항',address='千葉県成田市古込1-1',time='11/20 도착 · 11/23 귀국',lat=35.773689,lng=140.386032,note='공항 대표 위치 · 실제 터미널은 예약 확인')]
 extras=[('산리오 우에노점','東京都台東区上野4-8-6',35.709614,139.773682),('닌교초 이마한 / 로티즈 하우스 · 이크스피어리 4F','千葉県浦安市舞浜1-4',35.63429,139.88556),('네무로 하나마루 · KITTE 마루노우치점','東京都千代田区丸の内2-7-2',35.679085,139.764679)]
 for n,a,lat,lng in extras:places.append(dict(day='extra',name=n,address=a,time='추가 후보',lat=lat,lng=lng,note='건물 대표 위치 · 층·입구는 현장 확인'))
+for p in places:
+ if 'AFURI' in p['name']:
+  p['mapUrl']='https://maps.app.goo.gl/VnUzgmYiowKpeN4q6'
+  p['id']='afuri-harajuku'
 (ROOT/'map-data.js').write_text('window.TRIP_PLACES = '+json.dumps(places,ensure_ascii=False,indent=2)+';\n')
 print(f'Generated {len(places)} map entries')
 
