@@ -1,0 +1,155 @@
+[
+  {
+    "match": "츠지한 무로마치점",
+    "status": "card",
+    "label": "카드 가능",
+    "detail": "전자머니·QR 결제 가능 안내. 타베로그 지점 정보 기준.",
+    "source": "https://tabelog.com/tokyo/A1302/A130202/13295560/dtlmap/",
+    "sourceLabel": "타베로그",
+    "checked": "2026-11-12"
+  },
+  {
+    "match": "IPPUKU &amp; MATCHA",
+    "status": "card",
+    "label": "카드 가능",
+    "detail": "VISA·Mastercard·JCB·AMEX 등. 지점별 관광 정보 기준.",
+    "source": "https://travel.yahoo.co.jp/kanko/spot-00040129/",
+    "sourceLabel": "Yahoo! 여행",
+    "checked": "2026-11-12"
+  },
+  {
+    "match": "Calbee Plus 도쿄역",
+    "status": "card",
+    "label": "카드 가능",
+    "detail": "현금·카드·전자머니·코드 결제.",
+    "source": "https://www.tokyoeki-1bangai.co.jp/shop/detail/?cd=000045",
+    "sourceLabel": "도쿄역 일번가 공식",
+    "checked": "2026-11-12"
+  },
+  {
+    "match": "HARBS 루미네 유라쿠초점",
+    "status": "card",
+    "label": "카드 가능",
+    "detail": "전 지점 신용카드 사용 가능. QR 결제는 지점 확인.",
+    "source": "https://www.harbs.co.jp/qa5/",
+    "sourceLabel": "HARBS 공식",
+    "checked": "2026-11-12"
+  },
+  {
+    "match": "긴자 웨스트 본점",
+    "status": "card",
+    "label": "카드 가능",
+    "detail": "VISA·Mastercard·JCB·AMEX 등. 매장 취재 정보 기준.",
+    "source": "https://deeptokyo.jp/spot/food_gourmet/2935/",
+    "sourceLabel": "DEEPTOKYO",
+    "checked": "2026-11-12"
+  },
+  {
+    "match": "스시노미도리 긴자점",
+    "status": "card",
+    "label": "카드 가능",
+    "detail": "현금·신용카드(은련 포함)·교통계 IC·QUICPay·iD.",
+    "source": "https://www.sushinomidori.co.jp/shops/ginza/",
+    "sourceLabel": "매장 공식",
+    "checked": "2026-11-12"
+  },
+  {
+    "match": "츠키지 야마초",
+    "status": "cash",
+    "label": "카드 불가 · 현금 또는 PayPay",
+    "detail": "교통계 IC 등 전자머니 불가 안내. 타베로그 기준, 현장 재확인.",
+    "source": "https://tabelog.com/tokyo/A1313/A131301/13100313/dtlmap/",
+    "sourceLabel": "타베로그",
+    "checked": "2026-11-12"
+  },
+  {
+    "match": "츠키지 마루타케",
+    "status": "cash",
+    "label": "현금 전용 안내",
+    "detail": "카드·전자머니·QR 결제 불가로 안내됨. 츠키지 본점 기준, 현장 재확인.",
+    "source": "https://tabelog.com/tokyo/A1313/A131301/13020932/",
+    "sourceLabel": "타베로그",
+    "checked": "2026-11-12"
+  },
+  {
+    "match": "마구로야 쿠로긴",
+    "status": "card",
+    "label": "카드 가능 · 현금은 방문 전 확인",
+    "detail": "카드·교통계 IC·QR 결제 가능. 현금은 시장 공식 안내와 최근 캐시리스 전환 보도가 달라 공식 SNS·매장 확인.",
+    "source": "https://www.tsukiji.or.jp/shoplist/cat-d/cat-13/449/",
+    "sourceLabel": "츠키지시장 공식",
+    "checked": "2026-11-12"
+  },
+  {
+    "match": "긴자 웨스트 아오야마 가든점",
+    "status": "card",
+    "label": "카드 가능",
+    "detail": "VISA·Mastercard·JCB·AMEX·Diners 등. 타베로그 지점 정보 기준.",
+    "source": "https://tabelog.com/tokyo/A1307/A130701/13057028/dtlmap/",
+    "sourceLabel": "타베로그",
+    "checked": "2026-11-12"
+  },
+  {
+    "match": "AFURI Harajuku",
+    "status": "cashless",
+    "label": "캐시리스 전용 · 현금 불가",
+    "detail": "신용카드·교통계 IC 등 전자머니·QR 결제 가능.",
+    "source": "https://www.afuri.com/findus/",
+    "sourceLabel": "AFURI 공식",
+    "checked": "2026-11-12"
+  },
+  {
+    "match": "시로이치 시부야점",
+    "status": "cash",
+    "label": "현금 전용 안내",
+    "detail": "카드·전자머니·QR 결제 불가로 안내됨. 이전 후 가미야마초 40-1 지점 기준, 현장 재확인.",
+    "source": "https://tabelog.com/tokyo/A1318/A131810/13327127/",
+    "sourceLabel": "타베로그",
+    "checked": "2026-11-12"
+  },
+  {
+    "match": "모헤지 시부야",
+    "status": "card",
+    "label": "카드 가능",
+    "detail": "VISA·Mastercard·JCB·AMEX·Diners 등. 전자머니·PayPay 가능 안내.",
+    "source": "https://bimi.jorudan.co.jp/shop/101537/map/",
+    "sourceLabel": "조르단 매장 정보",
+    "checked": "2026-11-12"
+  },
+  {
+    "match": "도쿄 아부라구미 닌교초점",
+    "status": "cash",
+    "label": "현금 준비 · 카드 불가 안내",
+    "detail": "닌교초 지점은 카드·전자머니·QR 불가로 안내됨(타베로그). 다른 정보도 있어 방문 전 매장 재확인.",
+    "source": "https://tabelog.com/tokyo/A1302/A130204/13210427/dtlmap/",
+    "sourceLabel": "타베로그",
+    "checked": "2026-11-12"
+  },
+  {
+    "match": "닌교초 이마한 · 마이하마 이크스피어리점",
+    "status": "card",
+    "label": "카드 가능",
+    "detail": "VISA·Mastercard·JCB·AMEX·Diners·은련, 교통계 IC·iD·PayPay 등.",
+    "source": "https://restaurant.imahan.com/maihama/",
+    "sourceLabel": "매장 공식",
+    "checked": "2026-11-12"
+  },
+  {
+    "match": "로티즈 하우스 · 이크스피어리",
+    "status": "card",
+    "label": "카드 가능",
+    "detail": "VISA·Mastercard·JCB·AMEX·Diners 등. 전자머니·QR 가능 안내.",
+    "source": "https://tabelog.com/chiba/A1202/A120203/12000266/",
+    "sourceLabel": "타베로그",
+    "checked": "2026-11-12"
+  },
+  {
+    "match": "네무로 하나마루 · KITTE 마루노우치점",
+    "status": "card",
+    "label": "카드 가능",
+    "detail": "VISA·Mastercard·JCB·AMEX·Diners. 교통계 IC 등 전자머니 가능.",
+    "source": "https://www.sushi-hanamaru.com/store/details/s11.html",
+    "sourceLabel": "매장 공식",
+    "checked": "2026-11-12"
+  }
+]
