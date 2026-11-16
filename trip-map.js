@@ -33,7 +33,7 @@
         const marker=L.marker([p.lat,p.lng],{title:group.map(p=>p.name).join(' / '),icon:L.divIcon({className:'pin',html:'',iconSize:[22,22],iconAnchor:[11,11]})}).addTo(markers).bindPopup(group.map(popup).join('<hr>'));
         marker.on('add',()=>{marker.getElement().style.background=colors[p.day];});
         marker.getElement().style.background=colors[p.day];
-        if(group.some(p=>p.id==='afuri-harajuku')) marker.bindTooltip('🍜 AFURI Harajuku',{permanent:true,direction:'top',offset:[0,-10],className:'afuri-label'});
+        if(group.some(p=>p.id==='afuri-yurakucho')) marker.bindTooltip('🍜 AFURI 유라쿠초',{permanent:true,direction:'top',offset:[0,-10],className:'afuri-label'});
         markerByKey.set(key,marker);
       });
       if(visible.length) map.fitBounds(visible.map(p=>[p.lat,p.lng]),{padding:[28,28],maxZoom:15});
@@ -54,7 +54,7 @@
   });
   const focusAfuri = () => {
     select('d2');
-    const p=places.find(p=>p.id==='afuri-harajuku');
+    const p=places.find(p=>p.id==='afuri-yurakucho');
     if(map&&p){map.setView([p.lat,p.lng],16);markers.eachLayer(marker=>{if(marker.getLatLng().lat===p.lat&&marker.getLatLng().lng===p.lng)marker.openPopup();});}
   };
   const afuriButton=document.createElement('button');afuriButton.type='button';afuriButton.textContent='🍜 AFURI 바로 보기';afuriButton.addEventListener('click',focusAfuri);document.getElementById('filters').append(afuriButton);
