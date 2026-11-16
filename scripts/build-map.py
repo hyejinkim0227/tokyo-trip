@@ -16,6 +16,8 @@ for day,sec in re.findall(r'<section class="day" id="(d\d)">(.*?)</section>',s,r
   if '편의점' in address:continue
   if 'Hotel Oriental' in name:
    if day=='d4' and time in ['10:00 전','13:15']:name='나리타국제공항'; address='千葉県成田市古込1-1'
+   elif day in ('d2','d3'):
+    address='東京都港区新橋4-10-2'
    else:continue
   if day=='d4':continue
   key=(day,name)

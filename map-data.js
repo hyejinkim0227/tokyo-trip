@@ -127,6 +127,15 @@ window.TRIP_PLACES = [
   },
   {
     "day": "d2",
+    "name": "🏨 숙소 출발 · Hotel Oriental Express Ginza West",
+    "address": "東京都港区新橋4-10-2",
+    "time": "07:30 전후",
+    "lat": 35.664818,
+    "lng": 139.756195,
+    "note": "Hotel Oriental Express Ginza West · 기존 숙소 지도 좌표"
+  },
+  {
+    "day": "d2",
     "name": "츠키지 장외시장 산책",
     "address": "東京都中央区築地4丁目 일대",
     "time": "08:00",
@@ -325,10 +334,28 @@ window.TRIP_PLACES = [
     "note": "국토지리원 주소 검색 기준 · 건물·번지 대표 위치"
   },
   {
+    "day": "d2",
+    "name": "🏨 숙소 복귀 · Hotel Oriental Express Ginza West",
+    "address": "東京都港区新橋4-10-2",
+    "time": "20:30~21:30",
+    "lat": 35.664818,
+    "lng": 139.756195,
+    "note": "Hotel Oriental Express Ginza West · 기존 숙소 지도 좌표"
+  },
+  {
+    "day": "d3",
+    "name": "🏨 숙소 출발 · Hotel Oriental Express Ginza West",
+    "address": "東京都港区新橋4-10-2",
+    "time": "07:00",
+    "lat": 35.664818,
+    "lng": 139.756195,
+    "note": "Hotel Oriental Express Ginza West · 기존 숙소 지도 좌표"
+  },
+  {
     "day": "d3",
     "name": "도쿄 디즈니씨",
     "address": "千葉県浦安市舞浜1-13",
-    "time": "07:00",
+    "time": "08:00~08:20 전후 도착",
     "lat": 35.62667,
     "lng": 139.88806,
     "note": "매장 또는 주소의 대표 위치 · 층·입구는 현장 확인"
@@ -350,6 +377,15 @@ window.TRIP_PLACES = [
     "lat": 35.6668072,
     "lng": 139.762333,
     "note": "돈키호테 긴자 본관 건물 대표 위치 · MapFan 좌표 기준"
+  },
+  {
+    "day": "d3",
+    "name": "🏨 숙소 복귀 · Hotel Oriental Express Ginza West",
+    "address": "東京都港区新橋4-10-2",
+    "time": "20:15 전후",
+    "lat": 35.664818,
+    "lng": 139.756195,
+    "note": "Hotel Oriental Express Ginza West · 기존 숙소 지도 좌표"
   },
   {
     "day": "extra",
