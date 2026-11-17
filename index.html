@@ -51,4 +51,4 @@ function setActiveDay(id){dayTabs.forEach(a=>{const active=a.getAttribute('href'
 setActiveDay(location.hash.slice(1)||'d1');
 dayTabs.forEach(a=>a.addEventListener('click',()=>setActiveDay(a.hash.slice(1))));
 if('IntersectionObserver' in window){const dayObserver=new IntersectionObserver(entries=>{const visible=entries.filter(e=>e.isIntersecting).sort((a,b)=>a.boundingClientRect.top-b.boundingClientRect.top);if(visible.length)setActiveDay(visible[0].target.id)},{rootMargin:'-70px 0px -65% 0px',threshold:0});document.querySelectorAll('.day,#extra,#illumination-reference').forEach(day=>dayObserver.observe(day))}
-</script><script src="ginza-route.js?v=20261116-route-choice"></script></body></html>
+</script><script src="ginza-route.js?v=20261116-route-choice"></script><script src="dropdown-motion.js?v=20261117"></script></body></html>
