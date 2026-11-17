@@ -126,3 +126,6 @@ details.transfer{border:1px solid #dce2eb}
 .route-option-heading{display:flex;align-items:flex-start;gap:9px}
 .route-option-heading>input[type="radio"]{flex:0 0 18px;width:18px;height:18px;margin:3px 0 0}
 .route-option-heading>b{flex:1;min-width:0;line-height:1.65;font-size:14px;font-weight:700;color:#424c5b}
+
+.order-menu{color:#485466;font-size:13px;line-height:1.9}.order-menu>b{color:#252f40;font-weight:750}.order-menu a{color:#3466ae}
+.priority-toggle{font-size:19px}
