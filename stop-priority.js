@@ -1,9 +1,9 @@
 (function () {
   'use strict';
-  document.querySelectorAll('.stop[data-priority-key]').forEach(stop => {
-    const time = stop.querySelector(':scope > .time');
+  document.querySelectorAll('.stop[data-priority-key], [data-priority-card]').forEach(stop => {
+    const time = stop.querySelector(':scope > .time') || stop.querySelector('.priority-control');
     if (!time) return;
-    const name = stop.querySelector('.name')?.textContent.trim() || '이 장소';
+    const name = stop.dataset.priorityName || stop.querySelector('.name')?.textContent.trim() || '이 장소';
     const key = 'tokyo-stop-priority-v1-' + stop.dataset.priorityKey;
     let value = stop.dataset.priority;
     try {
