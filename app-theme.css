@@ -85,3 +85,18 @@ details.transfer{margin:12px 24px;background:#f7f8fa;border:0;border-radius:12px
  .reference-gallery{gap:18px}.reference-image figcaption{font-size:12px}
 }
 @media(prefers-reduced-motion:reduce){.ginza-route-picker label{transition:none}}
+
+/* Clearer boundaries and a full-width content row beneath time/check. */
+:root{--line:#d6dce5}
+.panel,.day,.mini,.food-photo,.reference-image{border-color:#d6dce5}
+.day-head,.stop,.overview[open]>summary,.tabs{border-color:#e0e5ec}
+details.transfer{border:1px solid #dce2eb}
+.transfer[open] summary,.payment-note{border-color:#dce2eb}
+.edit input{border-color:#ccd5e1}
+.done{border-color:#b8c4d4}.done::after{border-color:#b8c4d4}
+.done:checked,.done:checked::after{border-color:#3478f6}.done:checked::after{border-color:#fff}
+.stop{grid-template-columns:minmax(0,1fr) 24px;column-gap:12px;row-gap:9px}
+.stop>.time{grid-column:1;grid-row:1;align-self:center;min-width:0;white-space:normal;padding-top:0}
+.stop>.done{grid-column:2;grid-row:1;justify-self:end;align-self:center;margin:0;width:23px;height:23px}
+.stop>.stop-main{grid-column:1/-1;grid-row:2;min-width:0}
+@media(max-width:600px){.stop{row-gap:8px}.stop>.time{grid-column:1}.stop>.done{grid-row:1;margin:0}.stop>.stop-main{grid-column:1/-1}}
