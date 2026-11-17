@@ -117,6 +117,6 @@ details.transfer{border:1px solid #dce2eb}
 .stop>.time{gap:10px}.priority-control{display:inline-flex;margin-right:5px}
 
 /* Icon-only priority toggles; accessible labels remain in JavaScript. */
-.priority-toggle{min-width:36px;min-height:36px;width:36px;height:36px;padding:0;border:0;background:transparent;color:#e9b52d;font-size:27px;line-height:1;box-shadow:none}
+.priority-toggle{min-width:23px;min-height:23px;width:23px;height:23px;padding:0;border:0;background:transparent;color:#e9b52d;font-size:23px;line-height:1;box-shadow:none}
 .priority-toggle[aria-pressed="false"]{border:0;background:transparent;color:#b7bec8;box-shadow:none}
 .priority-toggle[aria-pressed="true"]::before,.priority-toggle[aria-pressed="false"]::before{content:none}
