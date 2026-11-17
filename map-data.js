@@ -281,15 +281,6 @@ window.TRIP_PLACES = [
   },
   {
     "day": "d2",
-    "name": "MEGA 돈키호테 시부야",
-    "address": "東京都渋谷区宇田川町28-6",
-    "time": "16:15 전후",
-    "lat": 35.660339,
-    "lng": 139.697739,
-    "note": "매장 또는 주소의 대표 위치 · 층·입구는 현장 확인"
-  },
-  {
-    "day": "d2",
     "name": "드림캡슐 · MAGNET 5층",
     "address": "東京都渋谷区神南1-23-10 MAGNET by SHIBUYA109 5F",
     "time": "16:50 전후",
