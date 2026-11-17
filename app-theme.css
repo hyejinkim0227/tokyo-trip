@@ -120,3 +120,5 @@ details.transfer{border:1px solid #dce2eb}
 .priority-toggle{min-width:23px;min-height:23px;width:23px;height:23px;padding:0;border:0;background:transparent;color:#e9b52d;font-size:23px;line-height:1;box-shadow:none}
 .priority-toggle[aria-pressed="false"]{border:0;background:transparent;color:#b7bec8;box-shadow:none}
 .priority-toggle[aria-pressed="true"]::before,.priority-toggle[aria-pressed="false"]::before{content:none}
+
+.oden-snack{border-top:0;padding:15px 16px}.oden-snack>.time{grid-column:1;grid-row:1}.oden-snack>.done{grid-column:2;grid-row:1;margin:0}.oden-snack>.stop-main{grid-column:1/-1;grid-row:2}
