@@ -1,0 +1,87 @@
+/* A calm, spacious mobile app style inspired by the supplied screens. */
+:root{--ink:#20252c;--muted:#737b86;--line:#eef0f3;--blue:#3478f6;--bg:#fff}
+body{background:#fff;color:var(--ink);font-size:15px;line-height:1.75;letter-spacing:-.25px}
+a{color:#3478f6}button,input{font-family:inherit}
+.wrap{max-width:860px;padding:0 28px 100px}
+.hero{padding:48px 0 30px;margin-bottom:8px;border:0}
+.hero .eyebrow{color:#8a929d;font-size:10px;font-weight:650;letter-spacing:2px}
+.hero h1{font-size:30px;font-weight:800;letter-spacing:-1.1px;line-height:1.4;margin:12px 0 7px}
+.hero p{font-size:14px;color:#858c96}.hero .map-action{margin-top:26px}
+.map-button{display:flex;justify-content:center;gap:10px;width:100%;min-height:56px;padding:15px 20px;background:#3478f6;border:0;border-radius:15px;box-shadow:none;font-size:16px;font-weight:700;color:white}
+.map-button:hover{background:#2465de}
+#today-itinerary-note{text-align:center;font-size:12px!important;color:#8a929d}
+.panel,.day{background:#fff;border:1px solid #eceef2;border-radius:20px;box-shadow:none}
+.panel{padding:24px;margin:16px 0}.panel h2{font-size:19px;color:#252a31;line-height:1.5}
+.panel.overview{padding:0;overflow:hidden}
+.overview>summary{min-height:80px;padding:21px 24px;gap:16px}
+.overview>summary .overview-title{font-size:16px;font-weight:700;color:#2a3038;letter-spacing:-.4px}
+.overview>summary .overview-sub{margin-top:4px;font-size:12px;font-weight:400;color:#9097a1;line-height:1.6}
+.overview>summary::after{content:'';width:9px;height:9px;border-right:2px solid #535d6b;border-bottom:2px solid #535d6b;transform:rotate(45deg);font-size:0;margin-right:4px}
+.overview[open]>summary::after{content:'';transform:rotate(225deg)}
+.overview[open]>summary{border-bottom:1px solid #f0f1f4;margin-bottom:16px}
+.overview-content{padding:0 24px 24px}
+.flight{gap:12px}.flight>div{padding:18px;background:#f7f8fa;border-radius:14px}
+.flight strong{font-size:23px;color:#252b34}.label{color:#969da7;font-size:12px;font-weight:500}
+.small,.route{font-size:13px;color:#7c8591}
+.btn{background:#f0f5ff;color:#3478f6;border-radius:10px}
+.edit input{border:1px solid #e7eaf0;border-radius:12px;background:#fff;color:#252b34;padding:13px}
+.tabs{gap:7px;background:#ffffffed;padding:16px 0;border-bottom:1px solid #eff1f5;backdrop-filter:blur(14px);margin-bottom:20px}
+.tabs a{padding:10px 15px;border:0;border-radius:12px;background:#f5f6f8;color:#868e9b;font-size:13px;font-weight:600}
+.tabs a.active{background:#3478f6;color:#fff;border-color:transparent}.tabs a:hover{background:#eaf1ff;color:#3478f6}.tabs a.active:hover{background:#2465de;color:#fff}
+.day{margin:0 0 28px;scroll-margin-top:82px;overflow:hidden;--day-color:#3478f6}
+#d2,#d3,#d4{--day-color:#3478f6}
+.day-head{padding:30px 26px 24px;background:white;border-bottom:1px solid #f0f1f4}
+.day-head .date{padding:0;background:none;border-radius:0;color:#3478f6;font-size:11px;font-weight:750;letter-spacing:1px}
+.day-head h2{margin:10px 0 12px;font-size:23px;line-height:1.5;font-weight:800;letter-spacing:-.9px;color:#252a31}
+.day-head p{font-size:13px;color:#9198a2;line-height:1.7}
+.trip-weather{margin:16px 0;padding:15px 16px;background:#f7f9fc;border:0;border-radius:14px}
+.weather-summary{font-size:13px;color:#526173;font-weight:600;line-height:1.85}
+.weather-meta,.weather-source{font-size:10px;color:#a0a7b1}.weather-source a{color:#8294ab}
+.stop{padding:27px 26px;gap:16px;border-top:1px solid #f0f1f4;grid-template-columns:100px minmax(0,1fr) 24px}
+.time{color:#3478f6;font-size:12px;font-weight:650;line-height:1.7;overflow-wrap:anywhere}
+.name{font-size:18px;color:#252a31;line-height:1.65;font-weight:750;letter-spacing:-.5px}
+.detail{color:#747e8c;font-size:14px;line-height:1.9;margin-top:10px}
+.address{color:#9aA1ab;font-size:12px;line-height:1.8;margin-top:13px}
+.hours-note{padding:10px 12px;background:#f8f9fb;border-radius:10px;color:#818b98;font-size:12px;line-height:1.8}
+.hours-note b{color:#67717f;font-weight:600}.hours-note a{color:#7b94bb;font-size:11px}
+.reserve-note{font-size:12px;line-height:1.85;color:#9198a3}
+.reserve-tag,.opt{font-size:10px;border-radius:6px;background:#f2f5f9;color:#8090a5;padding:3px 7px}
+.links{gap:8px;margin-top:16px}.links a{font-size:12px;padding:7px 11px;border:0;background:#f1f6ff;color:#5283cf;border-radius:9px;font-weight:550;line-height:1.6}
+.links a:hover{background:#e4eeff}
+.done{appearance:none;-webkit-appearance:none;width:23px;height:23px;border:2px solid #e5e9ef;border-radius:50%;background:#fff;cursor:pointer;display:grid;place-items:center;margin-top:4px;flex-shrink:0}
+.done::after{content:'';width:8px;height:4px;border-left:2px solid #dce2ea;border-bottom:2px solid #dce2ea;transform:rotate(-45deg);margin-top:-2px}
+.done:checked{background:#3478f6;border-color:#3478f6}.done:checked::after{border-color:#fff}
+.done:focus-visible{outline:3px solid #b6d0ff;outline-offset:3px}
+.stop:has(.done:checked){opacity:1}.stop:has(.done:checked) .name{text-decoration:none;color:#a1a9b4}
+.hotel-return{background:#f8faff}.hotel-return .name{font-size:16px;color:#59708f}.hotel-return .detail{font-size:13px;color:#8795a8}
+details.transfer{margin:12px 24px;background:#f7f8fa;border:0;border-radius:12px}
+.transfer summary{min-height:50px;padding:13px 16px;gap:12px}.transfer summary strong{font-size:12px;font-weight:550;color:#8793a3;line-height:1.7}
+.transfer-toggle{font-size:10px;color:#a2acb9;gap:10px}.transfer-toggle::after{width:6px;height:6px;border-width:1.5px}
+.transfer[open] summary{background:#f2f5fa;border-bottom:1px solid #eaf0f6}
+.transfer-body{padding:15px 16px;color:#7b8798;font-size:13px;line-height:1.9}.transfer-body a{font-size:12px;color:#6c94cd}
+.transfer-note{margin:16px 24px;padding:14px 16px;background:#f9fafc;border:0;border-radius:12px;font-size:12px;color:#929ba8;line-height:1.9}
+.alert{padding:14px 16px;background:#fffbef;border:0;border-radius:12px;font-size:12px;color:#a69573;line-height:1.85}
+.mini{padding:20px;background:#fafbfc;border:1px solid #eef0f4;border-radius:15px}.mini>b{color:#424c5b;font-size:14px}.mini p{font-size:13px;color:#8c95a2}
+.ginza-route-picker label{transition:background .18s,border-color .18s}.ginza-route-picker label:has(input:checked){border:1px solid #8ab3ff;background:#f4f8ff}.ginza-route-picker legend{font-size:14px;color:#6f7c8e}.ginza-route-picker input{accent-color:#3478f6}
+.food-photo,.reference-image{border:1px solid #f0f1f3;border-radius:15px;box-shadow:none}.food-photo figcaption{font-size:12px;color:#9aa2ae;padding:13px 14px}.food-photo figcaption strong{color:#6e7c91;font-size:13px}.food-photo figcaption a{color:#91a5c1;font-size:11px}
+.reference-image figcaption{font-size:12px;color:#718098}.reference-image figcaption a{font-size:11px;color:#8ba1c1}
+.payment-note{border-top-color:#eceff4;color:#8a95a4;font-size:11px}.payment-badge{font-size:10px;font-weight:600}.payment-checked{color:#acb3bd;font-size:10px}
+.footer{color:#b0b7c1;font-size:11px;padding:30px 12px}
+.back-to-top{background:#3478f6;border:1px solid #ffffffb3;width:52px;height:52px}.back-to-top:hover{background:#2465de}
+@media(max-width:600px){
+ .wrap{padding:0 20px 100px}.hero{padding:36px 2px 22px}.hero h1{font-size:26px}.hero p{font-size:13px}
+ .panel{padding:20px;margin:14px 0;border-radius:17px}.panel.overview{padding:0}.overview>summary{padding:20px;min-height:78px}.overview-content{padding:0 20px 20px}
+ .overview>summary .overview-title{font-size:15px}.overview>summary .overview-sub{font-size:11px}.panel h2{font-size:18px}
+ .tabs{padding:13px 0;margin:0 0 18px;gap:6px}.tabs a{padding:10px 12px;font-size:12px}
+ .day{border-radius:18px;margin-bottom:24px}.day-head{padding:25px 20px 20px}.day-head h2{font-size:21px}.day-head p{font-size:12px}
+ .stop{padding:23px 20px;grid-template-columns:minmax(0,1fr) 23px;column-gap:12px;row-gap:6px}
+ .stop>.time{grid-column:1/-1;grid-row:1;font-size:11px;white-space:normal;padding-top:0}
+ .stop>.stop-main{grid-column:1;grid-row:2;min-width:0}.stop>.done{grid-column:2;grid-row:2;margin-top:5px;justify-self:end;width:23px;height:23px}
+ .name{font-size:17px;overflow-wrap:anywhere}.detail{font-size:13px}.address{font-size:11px}.hours-note{font-size:11px}.hours-note a{font-size:10px}.reserve-note{font-size:11px}
+ .links a{font-size:11px;padding:7px 10px}.hotel-return .name{font-size:15px}.hotel-return .detail{font-size:12px}
+ details.transfer{margin:10px 18px}.transfer summary{padding:12px 13px}.transfer summary strong{font-size:11px}.transfer-toggle{font-size:9px}.transfer-body{font-size:12px}
+ .transfer-note{margin:14px 18px;font-size:11px;padding:12px 14px}.alert{font-size:11px}.trip-weather{padding:13px 14px}.weather-summary{font-size:12px}
+ .flight>div{padding:14px}.flight strong{font-size:20px}.small,.route{font-size:12px}.mini{padding:17px}.mini p{font-size:12px}
+ .reference-gallery{gap:18px}.reference-image figcaption{font-size:12px}
+}
+@media(prefers-reduced-motion:reduce){.ginza-route-picker label{transition:none}}
