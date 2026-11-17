@@ -44,13 +44,15 @@
         ' · 강수확률 ' + number(d.precipitation_probability_max[index], '%') +
         (key === 'disney' ? ' · 최대풍속 ' + number(d.wind_speed_10m_max[index], 'm/s') : '');
       const stamp = new Intl.DateTimeFormat('ko-KR', { timeZone: 'Asia/Tokyo', month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit', hour12: false }).format(new Date(cache.dateStamps?.[date] || cache.fetchedAt));
-      meta.textContent = (stale ? '저장된 예보 · 최신 조회 실패 · ' : '') + '조회 ' + stamp + ' (도쿄 시간)' + (date < today() ? ' · 여행 당시 저장한 예보이며 실제 관측값이 아닙니다.' : ' · 예보는 바뀔 수 있어요.');
+      meta.textContent = (stale ? '사이트·브라우저에 저장된 예보 · ' : '') + '조회 ' + stamp + ' (도쿄 시간)' + (date < today() ? ' · 여행 당시 저장한 예보이며 실제 관측값이 아닙니다.' : ' · 예보는 바뀔 수 있어요.');
     });
   }
   async function update(key) {
     const storageKey = 'tokyo-trip-weather-v1-' + key;
     let cache;
     try { const value = JSON.parse(localStorage.getItem(storageKey)); if (valid(value)) cache = value; } catch (_) {}
+    const bundled = window.TRIP_WEATHER?.[key];
+    if (valid(bundled) && (!cache || bundled.fetchedAt > cache.fetchedAt)) cache = bundled;
     const current = today();
     const needed = cards.filter(card => card.dataset.weatherLocation === key && card.dataset.tripWeather >= current);
     if (cache) render(key, cache, false, false);

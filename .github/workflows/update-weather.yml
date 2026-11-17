@@ -1,0 +1,39 @@
+name: Update trip weather
+on:
+  push:
+    paths:
+      - scripts/update-weather.py
+      - .github/workflows/update-weather.yml
+  schedule:
+    - cron: '17 */3 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+  pages: write
+concurrency:
+  group: trip-weather-update
+  cancel-in-progress: false
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Update weather during trip preparation and travel
+        run: |
+          if [ "$(date -u +%Y-%m-%d)" \> "2026-11-23" ]; then exit 0; fi
+          python scripts/update-weather.py
+      - name: Publish forecast
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add weather-data.js index.html
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m 'Refresh trip weather forecasts'
+          git push
+      - name: Deploy updated static site
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api --method POST repos/${{ github.repository }}/pages/builds || echo 'Pages build may be managed by another deployment workflow.'
