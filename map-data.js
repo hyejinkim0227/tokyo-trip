@@ -254,6 +254,15 @@ window.TRIP_PLACES = [
   },
   {
     "day": "d2",
+    "name": "Nintendo TOKYO · 동물의 숲 공식 굿즈",
+    "address": "東京都渋谷区宇田川町15-1 渋谷PARCO 6F",
+    "time": "시부야 쇼핑 중 · 선택",
+    "lat": 35.6618,
+    "lng": 139.6987,
+    "note": "시부야 PARCO 건물 대표 위치 · Nintendo TOKYO 6F · 입구는 현장 확인"
+  },
+  {
+    "day": "d2",
     "name": "Pet Paradise Shibuya · 시부야 스페인자카점",
     "address": "東京都渋谷区宇田川町16-13 内田ビル1F · 전화 03-6416-5080",
     "time": "14:50~15:10 전후",
