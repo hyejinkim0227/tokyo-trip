@@ -346,7 +346,7 @@ window.TRIP_PLACES = [
     "day": "d3",
     "name": "🏨 숙소 출발 · Hotel Oriental Express Ginza West",
     "address": "東京都港区新橋4-10-2",
-    "time": "07:00",
+    "time": "06:00~06:30",
     "lat": 35.664818,
     "lng": 139.756195,
     "note": "Hotel Oriental Express Ginza West · 기존 숙소 지도 좌표"
@@ -355,7 +355,7 @@ window.TRIP_PLACES = [
     "day": "d3",
     "name": "도쿄 디즈니씨",
     "address": "千葉県浦安市舞浜1-13",
-    "time": "08:00~08:20 전후 도착",
+    "time": "07:00~07:50 전후 도착",
     "lat": 35.62667,
     "lng": 139.88806,
     "note": "매장 또는 주소의 대표 위치 · 층·입구는 현장 확인"
